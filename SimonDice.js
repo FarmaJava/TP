@@ -45,8 +45,6 @@ function preload() { //Creacion de Sprites, Sonido, Buttons y diseño
     button_Start.style('border', 'none');
     button_Start.style('border-radius', '5px');
     button_Start.style('font-size', '16px');
-
-    Sound = loadSound("https://raw.githubusercontent.com/FarmaJava/TP/main/select-sound-121244.mp3")
 }
 
 function Secuence() { // Creador de Secuencia Aleatoria
@@ -130,7 +128,6 @@ function draw() {
     background(160, 243, 145)
     drawSprites()
 
-    Sound.play();
     button_Start.mousePressed(Text_Start);
 
     if (ShowText_1) { // Se verifica y imprime el Texto Uno
